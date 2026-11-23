@@ -1,0 +1,1049 @@
+{
+  "repository": "acworkma/spec-driven-delivery-starter",
+  "revision": "5de8ace89bbb7e938200664d6cd93541cd9c4612",
+  "items": [
+    {
+      "id": "001-FR-001",
+      "case": "001",
+      "kind": "requirement",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "System MUST show signed-in members their own claims from the last 24 months by date of service, newest first, including ended coverage; adjusted claims appear once, as the latest version."
+    },
+    {
+      "id": "001-FR-002",
+      "case": "001",
+      "kind": "requirement",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "System MUST show each claim's number, date of service, provider, status, amount billed, plan paid and what the member may owe (once processed)."
+    },
+    {
+      "id": "001-FR-003",
+      "case": "001",
+      "kind": "requirement",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "System MUST show claim information no more than 24 hours behind the claims system, with its \"Updated\" time, and say plainly when it can't refresh."
+    },
+    {
+      "id": "001-FR-004",
+      "case": "001",
+      "kind": "requirement",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "System MUST show a plain-language empty state when there are no claims."
+    },
+    {
+      "id": "001-FR-005",
+      "case": "001",
+      "kind": "requirement",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "System MUST give each claim one of the six statuses, using Claims Operations' mapping, with plain-language text on what happens next."
+    },
+    {
+      "id": "001-FR-006",
+      "case": "001",
+      "kind": "requirement",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "System MUST say whom a Waiting for information claim awaits (provider or member) and what, if anything, the member must do."
+    },
+    {
+      "id": "001-FR-007",
+      "case": "001",
+      "kind": "requirement",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "System MUST show every service line with a plain-language description, amounts and its own status, and say \"Processed by your other plan first\" when another plan paid first."
+    },
+    {
+      "id": "001-FR-008",
+      "case": "001",
+      "kind": "requirement",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "System MUST show for denials the plain-language reason, how and by when to appeal, a link to the existing appeal process, and the EOB."
+    },
+    {
+      "id": "001-FR-009",
+      "case": "001",
+      "kind": "requirement",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "System MUST show \"We're reviewing this claim. Please contact us.\" for unmapped codes, never the code, and log the gap for Claims Operations."
+    },
+    {
+      "id": "001-FR-010",
+      "case": "001",
+      "kind": "requirement",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "System MUST NOT show diagnosis codes, clinical notes or other clinical detail."
+    },
+    {
+      "id": "001-FR-011",
+      "case": "001",
+      "kind": "requirement",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "System MUST let only the subscriber see dependents' claims, by age on the viewing day: under 13, all; 13–17, all but sensitive-service claims (per Contoso's privacy policy); 18 and over, none. It MUST show none for a dependent with a confidential communication request, or whose age or privacy status it can't confirm."
+    },
+    {
+      "id": "001-FR-012",
+      "case": "001",
+      "kind": "requirement",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "System MUST leave no trace of hidden claims in any list, count, total, message or EOB, and answer requests for them exactly as for nonexistent claims."
+    },
+    {
+      "id": "001-FR-013",
+      "case": "001",
+      "kind": "requirement",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "System MUST show one privacy note on every dependent's page and, for dependents 18 and over, that their claims are private, whether or not any exist."
+    },
+    {
+      "id": "001-FR-014",
+      "case": "001",
+      "kind": "requirement",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "System MUST offer an accessible EOB for Processed, Denied and Adjusted claims, explain other formats and languages, and say when one isn't ready (usually 3 business days after processing)."
+    },
+    {
+      "id": "001-FR-015",
+      "case": "001",
+      "kind": "requirement",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "System MUST audit-log every view of claim information and every EOB request: who, whose claim, which claim, what and when."
+    },
+    {
+      "id": "001-FR-016",
+      "case": "001",
+      "kind": "requirement",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "System MUST show status labels, reason text and next steps in English or Spanish, per the member's language preference."
+    },
+    {
+      "id": "001-FR-017",
+      "case": "001",
+      "kind": "requirement",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "System MUST meet WCAG 2.2 AA on every member-facing page."
+    },
+    {
+      "id": "001-FR-018",
+      "case": "001",
+      "kind": "requirement",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "System MUST clear claim information from the screen on session timeout and return the member to the same page after sign-in."
+    },
+    {
+      "id": "001-US1-AS1",
+      "case": "001",
+      "kind": "scenario",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "member CHP-0004417 has recent claims | they open Claims | they see each claim's number, date of service, provider, status, amount billed, plan paid and what they may owe, newest first, with the \"Updated\" time."
+    },
+    {
+      "id": "001-US1-AS2",
+      "case": "001",
+      "kind": "scenario",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "a new member with no claims | they open Claims | they're told claims usually appear a few weeks after a visit."
+    },
+    {
+      "id": "001-US1-AS3",
+      "case": "001",
+      "kind": "scenario",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "the claims system is down and claims were updated 6 hours ago | the member opens Claims | those claims show with the \"Updated\" time and a note that recent changes may be missing."
+    },
+    {
+      "id": "001-US1-AS4",
+      "case": "001",
+      "kind": "scenario",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "claims haven't been updated for over 24 hours | the member opens Claims | no claims show, and a message explains how to get help."
+    },
+    {
+      "id": "001-US1-AS5",
+      "case": "001",
+      "kind": "scenario",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "an adjusted claim | the member opens Claims | it appears once, as its latest version, labeled Adjusted."
+    },
+    {
+      "id": "001-US2-AS1",
+      "case": "001",
+      "kind": "scenario",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "processed claim CLM-2026-000183 has three lines | the member opens it | each line shows a plain-language description and amounts, and no diagnosis codes or clinical notes appear."
+    },
+    {
+      "id": "001-US2-AS2",
+      "case": "001",
+      "kind": "scenario",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "claims waiting on the provider and on the member's other-insurance details | the member opens each | each says who we're waiting on and what, if anything, the member must do."
+    },
+    {
+      "id": "001-US2-AS3",
+      "case": "001",
+      "kind": "scenario",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "a denied claim | the member opens it | they see the plain-language reason, how to appeal and by when, and the EOB."
+    },
+    {
+      "id": "001-US2-AS4",
+      "case": "001",
+      "kind": "scenario",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "one of a claim's three lines was denied | the member opens it | each line shows its own status, and the denied line its reason."
+    },
+    {
+      "id": "001-US2-AS5",
+      "case": "001",
+      "kind": "scenario",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "a denial reason with no plain-language mapping | the member opens the claim | a generic \"We're reviewing this claim\" message replaces the code, and the gap is logged for Claims Operations."
+    },
+    {
+      "id": "001-US3-AS1",
+      "case": "001",
+      "kind": "scenario",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "the 9-year-old has claims, including CLM-2026-000201 | the subscriber opens them | all are shown, and each view is audit-logged."
+    },
+    {
+      "id": "001-US3-AS2",
+      "case": "001",
+      "kind": "scenario",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "the 16-year-old has two routine claims and one sensitive-service claim | the subscriber views that dependent | only the routine claims appear, and no count, total or message hints at a third."
+    },
+    {
+      "id": "001-US3-AS3",
+      "case": "001",
+      "kind": "scenario",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "the 19-year-old | the subscriber selects them | a message says adult dependents' claims are private, whether or not any exist."
+    },
+    {
+      "id": "001-US3-AS4",
+      "case": "001",
+      "kind": "scenario",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "a 9-year-old with a confidential communication request on file | the subscriber views that dependent | the page looks exactly like one for a dependent with no claims."
+    },
+    {
+      "id": "001-US3-AS5",
+      "case": "001",
+      "kind": "scenario",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "a link to the 16-year-old's sensitive-service claim | the subscriber opens it | they see the same \"We can't find this claim\" page as for a nonexistent claim."
+    },
+    {
+      "id": "001-US4-AS1",
+      "case": "001",
+      "kind": "scenario",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "a processed claim | the member selects \"Download Explanation of Benefits\" | an accessible document opens, with help for other formats or languages."
+    },
+    {
+      "id": "001-US4-AS2",
+      "case": "001",
+      "kind": "scenario",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "a claim processed yesterday | the member opens it | it says the EOB is usually ready within 3 business days after processing."
+    },
+    {
+      "id": "001-US4-AS3",
+      "case": "001",
+      "kind": "scenario",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "a dependent's hidden claim | the subscriber requests its EOB | the response matches that for a nonexistent claim."
+    },
+    {
+      "id": "001-SC-001",
+      "case": "001",
+      "kind": "outcome",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "Claim-status calls from portal-registered members fall 25% in the 90 days after launch versus the 90 days before."
+    },
+    {
+      "id": "001-SC-002",
+      "case": "001",
+      "kind": "outcome",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "In moderated usability testing, 9 of 10 members find a claim's status and next step in under 60 seconds."
+    },
+    {
+      "id": "001-SC-003",
+      "case": "001",
+      "kind": "outcome",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "No restricted dependent claim is shown to a subscriber in user acceptance testing or the first 90 days (privacy audit sample)."
+    },
+    {
+      "id": "001-SC-004",
+      "case": "001",
+      "kind": "outcome",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "Portal status matches the claims system within 24 hours for 99.5% of sampled claims."
+    },
+    {
+      "id": "001-SC-005",
+      "case": "001",
+      "kind": "outcome",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "Member-facing pages pass a WCAG 2.2 AA audit before launch."
+    },
+    {
+      "id": "001-SC-006",
+      "case": "001",
+      "kind": "outcome",
+      "source": "specs/001-member-claim-status/spec.md",
+      "text": "At least 95% of denied claims show a mapped plain-language reason."
+    },
+    {
+      "id": "002-FR-001",
+      "case": "002",
+      "kind": "requirement",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "System MUST offer only the 2027 catalog's three standard dental riders, capturing effective date, eligible classes, dependent eligibility and each class's contribution split."
+    },
+    {
+      "id": "002-FR-002",
+      "case": "002",
+      "kind": "requirement",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "System MUST check at submission that the group is active, the rider fits the base plan, required fields are complete and the effective date is the first of a month at least 30 calendar days after approval (the day it passes these checks)."
+    },
+    {
+      "id": "002-FR-003",
+      "case": "002",
+      "kind": "requirement",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "System MUST send shorter lead times to an exception route needing product owner and underwriting approval with a reason."
+    },
+    {
+      "id": "002-FR-004",
+      "case": "002",
+      "kind": "requirement",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "System MUST NOT accept a retired rider or a duplicate open request for the same group and rider."
+    },
+    {
+      "id": "002-FR-005",
+      "case": "002",
+      "kind": "requirement",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "System MUST build the configuration package from catalog values only; non-standard benefits go to the custom-benefit process."
+    },
+    {
+      "id": "002-FR-006",
+      "case": "002",
+      "kind": "requirement",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "System MUST start deductibles and annual maximums at zero on the rider's effective date, unprorated, and apply the base plan's dependent age limit and new-hire waiting period."
+    },
+    {
+      "id": "002-FR-007",
+      "case": "002",
+      "kind": "requirement",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "System MUST require a second configuration analyst, never the author, to approve each package and each change."
+    },
+    {
+      "id": "002-FR-008",
+      "case": "002",
+      "kind": "requirement",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "System MUST re-validate a request when its catalog version changes and hold the package for product owner approval."
+    },
+    {
+      "id": "002-FR-009",
+      "case": "002",
+      "kind": "requirement",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "System MUST send Fabrikam a synthetic test eligibility file covering every eligible class and record its response."
+    },
+    {
+      "id": "002-FR-010",
+      "case": "002",
+      "kind": "requirement",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "System MUST alert the vendor manager after 5 business days without a Fabrikam response and count each request's days waiting on the administrator."
+    },
+    {
+      "id": "002-FR-011",
+      "case": "002",
+      "kind": "requirement",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "System MUST compare expected and actual results for the eight test claims, raise a defect on any mismatch, and re-run all eight after any change."
+    },
+    {
+      "id": "002-FR-012",
+      "case": "002",
+      "kind": "requirement",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "System MUST block go-live until the package is approved, Fabrikam has accepted the test file and all eight test claims match."
+    },
+    {
+      "id": "002-FR-013",
+      "case": "002",
+      "kind": "requirement",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "System MUST re-validate a changed effective date as a new request and cancel requests for groups that terminate before go-live."
+    },
+    {
+      "id": "002-FR-014",
+      "case": "002",
+      "kind": "requirement",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "System MUST show each request's stage, owner, business days in stage and blockers, and flag to the product owner any request in one stage for more than 5 business days."
+    },
+    {
+      "id": "002-FR-015",
+      "case": "002",
+      "kind": "requirement",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "System MUST hold only group, product and synthetic test data, never real member data; account managers see only their own groups' requests."
+    },
+    {
+      "id": "002-FR-016",
+      "case": "002",
+      "kind": "requirement",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "System MUST log who did what and when for every change, approval, exception and stage change, kept per the records-retention schedule."
+    },
+    {
+      "id": "002-US1-AS1",
+      "case": "002",
+      "kind": "scenario",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "Northwind Traders (GRP-10482) is active on a base plan compatible with Dental Plus | the account manager submits complete request RR-2026-0117 on 2026-11-18, effective 2027-01-01 | it is approved and moves to configuration."
+    },
+    {
+      "id": "002-US1-AS2",
+      "case": "002",
+      "kind": "scenario",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "a request missing one class's contribution split and effective mid-month (2027-01-15) | it is submitted | the system names both problems plainly and keeps it in draft."
+    },
+    {
+      "id": "002-US1-AS3",
+      "case": "002",
+      "kind": "scenario",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "today is 2026-11-18 | a request effective 2026-12-01 is submitted | it goes to the exception route, needing product owner and underwriting approval with a recorded reason."
+    },
+    {
+      "id": "002-US1-AS4",
+      "case": "002",
+      "kind": "scenario",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "Tailspin Toys' base plan is incompatible with Dental Complete | that rider is chosen | the request is blocked with a plain explanation and the compatible riders listed."
+    },
+    {
+      "id": "002-US2-AS1",
+      "case": "002",
+      "kind": "scenario",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "approved request RR-2026-0117 for Dental Plus | the analyst generates the package | deductible, annual maximum, preventive, basic and major coinsurance, waiting periods and frequency limits come from the catalog and cannot be typed in."
+    },
+    {
+      "id": "002-US2-AS2",
+      "case": "002",
+      "kind": "scenario",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "a rider effective 2027-07-01, midway through the group's plan year | the package is generated | deductibles and annual maximums start at zero that day, with no proration."
+    },
+    {
+      "id": "002-US2-AS3",
+      "case": "002",
+      "kind": "scenario",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "a generated package | the analyst who generated it tries to approve it | the system refuses and asks for a second analyst."
+    },
+    {
+      "id": "002-US2-AS4",
+      "case": "002",
+      "kind": "scenario",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "the Dental Plus catalog version changed after approval | the package is generated | the request is re-validated, differences are listed and the package waits for product owner approval."
+    },
+    {
+      "id": "002-US3-AS1",
+      "case": "002",
+      "kind": "scenario",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "an approved package for GRP-10482 | Fabrikam Dental Administrators accepts a synthetic test eligibility file that includes member CHP-0004417 | the acceptance is recorded as readiness evidence."
+    },
+    {
+      "id": "002-US3-AS2",
+      "case": "002",
+      "kind": "scenario",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "Fabrikam rejects the test file | the rejection is recorded | go-live stays blocked and the request returns to configuration with Fabrikam's errors attached."
+    },
+    {
+      "id": "002-US3-AS3",
+      "case": "002",
+      "kind": "scenario",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "Fabrikam has not responded within 5 business days | the fifth business day ends | the vendor manager is alerted and the request shows as waiting on the administrator."
+    },
+    {
+      "id": "002-US4-AS1",
+      "case": "002",
+      "kind": "scenario",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "Fabrikam has accepted the test file | all eight test claims match expected results in the claims test region | the request is ready to pay claims."
+    },
+    {
+      "id": "002-US4-AS2",
+      "case": "002",
+      "kind": "scenario",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "the annual-maximum-reached test claim pays more than expected | the result is recorded | go-live is blocked and a defect with both results returns the request to configuration."
+    },
+    {
+      "id": "002-US5-AS1",
+      "case": "002",
+      "kind": "scenario",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "RR-2026-0117 is waiting on Fabrikam | the account manager or product owner opens it | they see its stage, owner, business days in stage and blocker."
+    },
+    {
+      "id": "002-US5-AS2",
+      "case": "002",
+      "kind": "scenario",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "a request has been in one stage for more than 5 business days | the sixth business day begins | it is flagged to the product owner."
+    },
+    {
+      "id": "002-SC-001",
+      "case": "002",
+      "kind": "outcome",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "Median elapsed time from approved request to ready to pay claims falls 40% against the previous 12 months."
+    },
+    {
+      "id": "002-SC-002",
+      "case": "002",
+      "kind": "outcome",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "At least 90% of requests pass validation on first submission."
+    },
+    {
+      "id": "002-SC-003",
+      "case": "002",
+      "kind": "outcome",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "Zero pilot go-lives have a benefit mismatch found after the effective date."
+    },
+    {
+      "id": "002-SC-004",
+      "case": "002",
+      "kind": "outcome",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "Handoffs outside the system (emails, spreadsheets) fall to 2 or fewer per request."
+    },
+    {
+      "id": "002-SC-005",
+      "case": "002",
+      "kind": "outcome",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "No request is returned for missing or wrong information more than once (clarification loops ≤ 1)."
+    },
+    {
+      "id": "002-SC-006",
+      "case": "002",
+      "kind": "outcome",
+      "source": "specs/002-group-dental-rider-setup/spec.md",
+      "text": "100% of requests show time spent waiting on the administrator."
+    },
+    {
+      "id": "003-FR-001",
+      "case": "003",
+      "kind": "requirement",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "System MUST give each fax or scanned batch a tracking ID, receipt timestamp (for mail, the mailroom's date-received stamp) and page count."
+    },
+    {
+      "id": "003-FR-002",
+      "case": "003",
+      "kind": "requirement",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "System MUST split multi-document faxes before classification; a person confirms uncertain splits."
+    },
+    {
+      "id": "003-FR-003",
+      "case": "003",
+      "kind": "requirement",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "System MUST classify each document as a claim form, medical record, prior-authorization request, appeal or grievance, provider correspondence, or Other, with a confidence score."
+    },
+    {
+      "id": "003-FR-004",
+      "case": "003",
+      "kind": "requirement",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "System MUST auto-route only non-Other documents at or above their type's threshold; the rest go to human review with a reason."
+    },
+    {
+      "id": "003-FR-005",
+      "case": "003",
+      "kind": "requirement",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "System MUST let Operations set each type's threshold (0.90 at launch) and record every change."
+    },
+    {
+      "id": "003-FR-006",
+      "case": "003",
+      "kind": "requirement",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "System MUST pause a type's auto-routing when its misroute rate exceeds 2% over a rolling week and alert the product owner; only a person resumes it."
+    },
+    {
+      "id": "003-FR-007",
+      "case": "003",
+      "kind": "requirement",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "System MUST extract member ID, name, date of birth, claim number and provider identifiers, with confidence scores."
+    },
+    {
+      "id": "003-FR-008",
+      "case": "003",
+      "kind": "requirement",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "System MUST attach automatically only on an exact member-ID match plus a matching date of birth or claim number; otherwise a reviewer sees candidate matches."
+    },
+    {
+      "id": "003-FR-009",
+      "case": "003",
+      "kind": "requirement",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "System MUST hold, unattached, any document whose identifiers point to different members, for privacy-trained reviewers only."
+    },
+    {
+      "id": "003-FR-010",
+      "case": "003",
+      "kind": "requirement",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "System MUST still attach documents for members whose coverage has ended, flagged \"coverage ended\"."
+    },
+    {
+      "id": "003-FR-011",
+      "case": "003",
+      "kind": "requirement",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "System MUST pause automatic attachment and open a Privacy Office incident review whenever a wrong-member attachment is found."
+    },
+    {
+      "id": "003-FR-012",
+      "case": "003",
+      "kind": "requirement",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "System MUST show reviewers only the document, suggestions and member details needed to confirm a match, and let them confirm, correct with a reason code, or escalate."
+    },
+    {
+      "id": "003-FR-013",
+      "case": "003",
+      "kind": "requirement",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "System MUST keep corrections as labeled examples inside production, used only under Privacy Office procedures; evaluation elsewhere uses only synthetic or de-identified documents."
+    },
+    {
+      "id": "003-FR-014",
+      "case": "003",
+      "kind": "requirement",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "System MUST start a deadline clock at receipt, including nights, weekends and holidays, for every confirmed or suggested prior-authorization request, appeal or grievance."
+    },
+    {
+      "id": "003-FR-015",
+      "case": "003",
+      "kind": "requirement",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "System MUST flag expedited documents and put them first; uncertain ones count as expedited until a person decides."
+    },
+    {
+      "id": "003-FR-016",
+      "case": "003",
+      "kind": "requirement",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "System MUST alert the supervisor when half a window passes unassigned, and the on-call queue when expedited documents arrive outside business hours."
+    },
+    {
+      "id": "003-FR-017",
+      "case": "003",
+      "kind": "requirement",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "System MUST report the User Story 5 measures daily by type, without member identifiers or document content."
+    },
+    {
+      "id": "003-FR-018",
+      "case": "003",
+      "kind": "requirement",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "System MUST reconcile every received page daily and report any gap to the intake supervisor."
+    },
+    {
+      "id": "003-FR-019",
+      "case": "003",
+      "kind": "requirement",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "System MUST audit-log every view, route, attachment and correction, by a person or the system."
+    },
+    {
+      "id": "003-FR-020",
+      "case": "003",
+      "kind": "requirement",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "System MUST lose nothing during an outage, keep clocks running from receipt, and clear the backlog earliest deadline first."
+    },
+    {
+      "id": "003-FR-021",
+      "case": "003",
+      "kind": "requirement",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "System MUST process and store documents only in environments approved for protected health information, under the existing records-retention schedule."
+    },
+    {
+      "id": "003-FR-022",
+      "case": "003",
+      "kind": "requirement",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "System MUST NOT decide any authorization, appeal, grievance or claim; people decide."
+    },
+    {
+      "id": "003-US1-AS1",
+      "case": "003",
+      "kind": "scenario",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "claim forms classified at 0.96 and 0.72 against a 0.90 threshold | routing runs | the first reaches the claims queue untouched; the second goes to human review."
+    },
+    {
+      "id": "003-US1-AS2",
+      "case": "003",
+      "kind": "scenario",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "fax FAX-20261118-0042 with blank or unreadable pages | it is classified | it goes to human review marked \"unreadable\"."
+    },
+    {
+      "id": "003-US1-AS3",
+      "case": "003",
+      "kind": "scenario",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "a fax holding an appeal and a medical record | it arrives | it is split into two documents, and a person confirms any uncertain split."
+    },
+    {
+      "id": "003-US2-AS1",
+      "case": "003",
+      "kind": "scenario",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "a document showing member ID CHP-0004417 and that member's claim CLM-2026-000183 | matching runs | the document is attached to both."
+    },
+    {
+      "id": "003-US2-AS2",
+      "case": "003",
+      "kind": "scenario",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "an exact member-ID match, a different date of birth and no claim number | matching runs | a reviewer sees candidate matches with only the details needed to confirm one."
+    },
+    {
+      "id": "003-US2-AS3",
+      "case": "003",
+      "kind": "scenario",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "a document showing member ID CHP-0004417 and another member's claim | matching runs | the document goes on privacy hold, unattached, for a privacy-trained reviewer."
+    },
+    {
+      "id": "003-US2-AS4",
+      "case": "003",
+      "kind": "scenario",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "an exact match for a member whose coverage has ended | matching runs | it is still attached, flagged \"coverage ended\"."
+    },
+    {
+      "id": "003-US3-AS1",
+      "case": "003",
+      "kind": "scenario",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "a task suggesting \"medical record\" at 0.71 | the reviewer changes it to \"appeal or grievance\" with a reason code | it routes to the appeals and grievances queue, clocked from receipt, and the correction becomes a labeled example."
+    },
+    {
+      "id": "003-US3-AS2",
+      "case": "003",
+      "kind": "scenario",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "a reviewer who cannot decide | they escalate | the task moves to the supervisor queue and any clock keeps running."
+    },
+    {
+      "id": "003-US4-AS1",
+      "case": "003",
+      "kind": "scenario",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "an expedited prior-authorization request received at 9:05 a.m. | it is routed at 9:20 a.m. | it tops the utilization-management queue, flagged, clocked from 9:05 a.m."
+    },
+    {
+      "id": "003-US4-AS2",
+      "case": "003",
+      "kind": "scenario",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "an unassigned expedited appeal | half its window has passed | the queue supervisor is alerted."
+    },
+    {
+      "id": "003-US4-AS3",
+      "case": "003",
+      "kind": "scenario",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "an expedited appeal received at 11:40 p.m. on a Saturday | it is classified | its clock starts at 11:40 p.m. and the on-call queue is notified."
+    },
+    {
+      "id": "003-US5-AS1",
+      "case": "003",
+      "kind": "scenario",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "yesterday's documents | the intake report opens | it shows by type the volume, auto-route, human-review and misroute rates, time to queue, deadline-risk items and unreconciled pages, without member identifiers."
+    },
+    {
+      "id": "003-US5-AS2",
+      "case": "003",
+      "kind": "scenario",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "provider correspondence misrouted at 2.4% over the past week | the rate is calculated | its auto-routing pauses and the product owner is alerted."
+    },
+    {
+      "id": "003-SC-001",
+      "case": "003",
+      "kind": "outcome",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "Within 60 days of pilot start, at least 60% of documents auto-route untouched, with misroutes at 2% or less."
+    },
+    {
+      "id": "003-SC-002",
+      "case": "003",
+      "kind": "outcome",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "Median time from receipt to the correct queue falls from today's baseline to 30 minutes or less."
+    },
+    {
+      "id": "003-SC-003",
+      "case": "003",
+      "kind": "outcome",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "Zero documents attached to the wrong member; any occurrence triggers FR-011."
+    },
+    {
+      "id": "003-SC-004",
+      "case": "003",
+      "kind": "outcome",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "100% of expedited prior-authorization requests and appeals reach the correct queue within 60 minutes of receipt, at any hour."
+    },
+    {
+      "id": "003-SC-005",
+      "case": "003",
+      "kind": "outcome",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "Manual keying time per document falls 50% against a time-study baseline."
+    },
+    {
+      "id": "003-SC-006",
+      "case": "003",
+      "kind": "outcome",
+      "source": "specs/003-inbound-document-triage/spec.md",
+      "text": "100% of received pages are reconciled daily."
+    },
+    {
+      "id": "004-FR-001",
+      "case": "004",
+      "kind": "requirement",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "System MUST capture rider, effective date, eligible employee classes and dependent eligibility for every request."
+    },
+    {
+      "id": "004-FR-002",
+      "case": "004",
+      "kind": "requirement",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "System MUST accept only first-of-month effective dates at least 30 calendar days after approval, unless the product owner and underwriting approve an exception."
+    },
+    {
+      "id": "004-FR-003",
+      "case": "004",
+      "kind": "requirement",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "System MUST block requests for groups that are inactive or whose coverage ends before the effective date."
+    },
+    {
+      "id": "004-FR-004",
+      "case": "004",
+      "kind": "requirement",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "System MUST build configuration from the benefit grid only, with approval by a second configuration analyst."
+    },
+    {
+      "id": "004-FR-005",
+      "case": "004",
+      "kind": "requirement",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "System MUST start allowances and frequency limits fresh on the rider's effective date, with no proration or carry-over."
+    },
+    {
+      "id": "004-FR-006",
+      "case": "004",
+      "kind": "requirement",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "System MUST apply the base plan's dependent age limit and new-hire waiting period."
+    },
+    {
+      "id": "004-FR-007",
+      "case": "004",
+      "kind": "requirement",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "System MUST send Fabrikam Vision Services a synthetic test eligibility file before go-live, record its response, and alert the vendor manager after 5 business days without one."
+    },
+    {
+      "id": "004-FR-008",
+      "case": "004",
+      "kind": "requirement",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "System MUST compare expected and actual results for the eight standard test claims and return any mismatch to configuration."
+    },
+    {
+      "id": "004-FR-009",
+      "case": "004",
+      "kind": "requirement",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "System MUST block go-live until configuration is approved, Fabrikam has accepted the test file and all eight test claims match."
+    },
+    {
+      "id": "004-FR-010",
+      "case": "004",
+      "kind": "requirement",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "System MUST cancel a request when its group terminates before go-live and tell Fabrikam to drop the group."
+    },
+    {
+      "id": "004-FR-011",
+      "case": "004",
+      "kind": "requirement",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "System MUST log who approved what and when, and use only synthetic members, such as CHP-0002286, in tests."
+    },
+    {
+      "id": "004-US1-AS1",
+      "case": "004",
+      "kind": "scenario",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "Woodgrove Bank (GRP-20417) is active on a compatible base plan | complete request RR-2025-0042 is submitted on 2025-05-12, effective 2025-07-01 | it is approved and moves to configuration."
+    },
+    {
+      "id": "004-US1-AS2",
+      "case": "004",
+      "kind": "scenario",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "today is 2025-06-10 | a request effective 2025-07-01 is submitted | it needs product owner and underwriting approval with a recorded reason."
+    },
+    {
+      "id": "004-US1-AS3",
+      "case": "004",
+      "kind": "scenario",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "Alpine Ski House's coverage ends before the requested effective date | a request is submitted | it is blocked with a plain explanation."
+    },
+    {
+      "id": "004-US2-AS1",
+      "case": "004",
+      "kind": "scenario",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "approved request RR-2025-0042 | the configuration analyst builds the package | copays, frame and contact lens allowances and frequency limits match the benefit grid."
+    },
+    {
+      "id": "004-US2-AS2",
+      "case": "004",
+      "kind": "scenario",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "a built package | the analyst who built it tries to approve it | approval is refused until a second analyst reviews it."
+    },
+    {
+      "id": "004-US2-AS3",
+      "case": "004",
+      "kind": "scenario",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "a rider effective 2025-07-01 for a group with a January plan year | the package is built | allowances and frequency limits start fresh that day, with no proration."
+    },
+    {
+      "id": "004-US3-AS1",
+      "case": "004",
+      "kind": "scenario",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "an approved package | Fabrikam accepts a synthetic test file with an employee, a dependent child and a new hire | the acceptance is recorded as readiness evidence."
+    },
+    {
+      "id": "004-US3-AS2",
+      "case": "004",
+      "kind": "scenario",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "Fabrikam rejects the file or is silent for 5 business days | that is recorded | go-live stays blocked and the vendor manager is alerted."
+    },
+    {
+      "id": "004-US4-AS1",
+      "case": "004",
+      "kind": "scenario",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "Fabrikam has accepted the test file | the eight standard test claims run (exam, lenses, frames, contacts instead of glasses, frequency limit reached, out-of-network, dependent child, terminated member) | all match expected results."
+    },
+    {
+      "id": "004-US4-AS2",
+      "case": "004",
+      "kind": "scenario",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "the frames claim pays above the allowance | the result is recorded | go-live is blocked and the request returns to configuration with the evidence."
+    },
+    {
+      "id": "004-US5-AS1",
+      "case": "004",
+      "kind": "scenario",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "every readiness check has passed | the effective date arrives | the rider is active for eligible employees and dependents."
+    },
+    {
+      "id": "004-US5-AS2",
+      "case": "004",
+      "kind": "scenario",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "an employee in a new-hire waiting period | the rider goes live | their rider starts when their medical coverage starts."
+    },
+    {
+      "id": "004-US5-AS3",
+      "case": "004",
+      "kind": "scenario",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "the group terminates before go-live | that is recorded | the request is cancelled and Fabrikam is told to drop the group."
+    },
+    {
+      "id": "004-SC-001",
+      "case": "004",
+      "kind": "outcome",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "Fabrikam accepts every group's test eligibility file before the group's effective date."
+    },
+    {
+      "id": "004-SC-002",
+      "case": "004",
+      "kind": "outcome",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "Zero benefit mismatches are found after any group's effective date."
+    },
+    {
+      "id": "004-SC-003",
+      "case": "004",
+      "kind": "outcome",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "At least 90% of requests pass validation on first submission."
+    },
+    {
+      "id": "004-SC-004",
+      "case": "004",
+      "kind": "outcome",
+      "source": "retro-spec/vision-rider-2025/spec.md",
+      "text": "No rider starts inside the 30-day lead time without a recorded exception approval."
+    }
+  ]
+}

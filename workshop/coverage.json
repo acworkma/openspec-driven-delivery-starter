@@ -1,0 +1,1237 @@
+[
+  {
+    "id": "001-FR-001",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-FR-002",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-FR-003",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-FR-004",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-FR-005",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-FR-006",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-FR-007",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-FR-008",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-FR-009",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-FR-010",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-FR-011",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [
+      "src/claim-status.js",
+      "tests/claim-status.test.js",
+      "src/claim-visibility.js"
+    ],
+    "note": "Dependent visibility, list projection and direct lookup parity. No portal, EOB service, audit store, freshness integration, accessibility or translation implementation."
+  },
+  {
+    "id": "001-FR-012",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [
+      "src/claim-status.js",
+      "tests/claim-status.test.js",
+      "src/claim-visibility.js"
+    ],
+    "note": "Dependent visibility, list projection and direct lookup parity. No portal, EOB service, audit store, freshness integration, accessibility or translation implementation."
+  },
+  {
+    "id": "001-FR-013",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [
+      "src/claim-status.js",
+      "tests/claim-status.test.js",
+      "src/claim-visibility.js"
+    ],
+    "note": "Dependent visibility, list projection and direct lookup parity. No portal, EOB service, audit store, freshness integration, accessibility or translation implementation."
+  },
+  {
+    "id": "001-FR-014",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-FR-015",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-FR-016",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-FR-017",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-FR-018",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-US1-AS1",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-US1-AS2",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-US1-AS3",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-US1-AS4",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-US1-AS5",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-US2-AS1",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-US2-AS2",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-US2-AS3",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-US2-AS4",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-US2-AS5",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-US3-AS1",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-US3-AS2",
+    "disposition": "automated",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [
+      "src/claim-status.js",
+      "tests/claim-status.test.js",
+      "src/claim-visibility.js"
+    ],
+    "note": "Covered within the declared in-memory teaching boundary."
+  },
+  {
+    "id": "001-US3-AS3",
+    "disposition": "automated",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [
+      "src/claim-status.js",
+      "tests/claim-status.test.js",
+      "src/claim-visibility.js"
+    ],
+    "note": "Covered within the declared in-memory teaching boundary."
+  },
+  {
+    "id": "001-US3-AS4",
+    "disposition": "automated",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [
+      "src/claim-status.js",
+      "tests/claim-status.test.js",
+      "src/claim-visibility.js"
+    ],
+    "note": "Covered within the declared in-memory teaching boundary."
+  },
+  {
+    "id": "001-US3-AS5",
+    "disposition": "automated",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [
+      "src/claim-status.js",
+      "tests/claim-status.test.js",
+      "src/claim-visibility.js"
+    ],
+    "note": "Covered within the declared in-memory teaching boundary."
+  },
+  {
+    "id": "001-US4-AS1",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-US4-AS2",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-US4-AS3",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-member-claim-status/specs/member-claim-status/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "001-SC-001",
+    "disposition": "deferred",
+    "contract": "workshop/cases/001-member-claim-status/context.md",
+    "evidence": [],
+    "note": "Business outcome requires an operational baseline and post-release observation; not measured by this workshop."
+  },
+  {
+    "id": "001-SC-002",
+    "disposition": "deferred",
+    "contract": "workshop/cases/001-member-claim-status/context.md",
+    "evidence": [],
+    "note": "Business outcome requires an operational baseline and post-release observation; not measured by this workshop."
+  },
+  {
+    "id": "001-SC-003",
+    "disposition": "deferred",
+    "contract": "workshop/cases/001-member-claim-status/context.md",
+    "evidence": [],
+    "note": "Business outcome requires an operational baseline and post-release observation; not measured by this workshop."
+  },
+  {
+    "id": "001-SC-004",
+    "disposition": "deferred",
+    "contract": "workshop/cases/001-member-claim-status/context.md",
+    "evidence": [],
+    "note": "Business outcome requires an operational baseline and post-release observation; not measured by this workshop."
+  },
+  {
+    "id": "001-SC-005",
+    "disposition": "deferred",
+    "contract": "workshop/cases/001-member-claim-status/context.md",
+    "evidence": [],
+    "note": "Business outcome requires an operational baseline and post-release observation; not measured by this workshop."
+  },
+  {
+    "id": "001-SC-006",
+    "disposition": "deferred",
+    "contract": "workshop/cases/001-member-claim-status/context.md",
+    "evidence": [],
+    "note": "Business outcome requires an operational baseline and post-release observation; not measured by this workshop."
+  },
+  {
+    "id": "002-FR-001",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "002-FR-002",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [
+      "src/dental-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Lead-time validation, catalog-version checks, independent approval and eight-result readiness. No request UI, vendor integration, persistent audit, business-day scheduler or actual claims adjudication."
+  },
+  {
+    "id": "002-FR-003",
+    "disposition": "automated",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [
+      "src/dental-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Covered within the declared in-memory teaching boundary."
+  },
+  {
+    "id": "002-FR-004",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "002-FR-005",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [
+      "src/dental-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Lead-time validation, catalog-version checks, independent approval and eight-result readiness. No request UI, vendor integration, persistent audit, business-day scheduler or actual claims adjudication."
+  },
+  {
+    "id": "002-FR-006",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [
+      "src/dental-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Lead-time validation, catalog-version checks, independent approval and eight-result readiness. No request UI, vendor integration, persistent audit, business-day scheduler or actual claims adjudication."
+  },
+  {
+    "id": "002-FR-007",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [
+      "src/dental-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Lead-time validation, catalog-version checks, independent approval and eight-result readiness. No request UI, vendor integration, persistent audit, business-day scheduler or actual claims adjudication."
+  },
+  {
+    "id": "002-FR-008",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [
+      "src/dental-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Lead-time validation, catalog-version checks, independent approval and eight-result readiness. No request UI, vendor integration, persistent audit, business-day scheduler or actual claims adjudication."
+  },
+  {
+    "id": "002-FR-009",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "002-FR-010",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "002-FR-011",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [
+      "src/dental-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Lead-time validation, catalog-version checks, independent approval and eight-result readiness. No request UI, vendor integration, persistent audit, business-day scheduler or actual claims adjudication."
+  },
+  {
+    "id": "002-FR-012",
+    "disposition": "automated",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [
+      "src/dental-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Covered within the declared in-memory teaching boundary."
+  },
+  {
+    "id": "002-FR-013",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "002-FR-014",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "002-FR-015",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "002-FR-016",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "002-US1-AS1",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "002-US1-AS2",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "002-US1-AS3",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [
+      "src/dental-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Lead-time validation, catalog-version checks, independent approval and eight-result readiness. No request UI, vendor integration, persistent audit, business-day scheduler or actual claims adjudication."
+  },
+  {
+    "id": "002-US1-AS4",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "002-US2-AS1",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [
+      "src/dental-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Lead-time validation, catalog-version checks, independent approval and eight-result readiness. No request UI, vendor integration, persistent audit, business-day scheduler or actual claims adjudication."
+  },
+  {
+    "id": "002-US2-AS2",
+    "disposition": "automated",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [
+      "src/dental-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Covered within the declared in-memory teaching boundary."
+  },
+  {
+    "id": "002-US2-AS3",
+    "disposition": "automated",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [
+      "src/dental-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Covered within the declared in-memory teaching boundary."
+  },
+  {
+    "id": "002-US2-AS4",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [
+      "src/dental-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Lead-time validation, catalog-version checks, independent approval and eight-result readiness. No request UI, vendor integration, persistent audit, business-day scheduler or actual claims adjudication."
+  },
+  {
+    "id": "002-US3-AS1",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "002-US3-AS2",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "002-US3-AS3",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "002-US4-AS1",
+    "disposition": "automated",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [
+      "src/dental-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Covered within the declared in-memory teaching boundary."
+  },
+  {
+    "id": "002-US4-AS2",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [
+      "src/dental-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Lead-time validation, catalog-version checks, independent approval and eight-result readiness. No request UI, vendor integration, persistent audit, business-day scheduler or actual claims adjudication."
+  },
+  {
+    "id": "002-US5-AS1",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "002-US5-AS2",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "002-SC-001",
+    "disposition": "deferred",
+    "contract": "workshop/cases/002-group-dental-rider-setup/context.md",
+    "evidence": [],
+    "note": "Business outcome requires an operational baseline and post-release observation; not measured by this workshop."
+  },
+  {
+    "id": "002-SC-002",
+    "disposition": "deferred",
+    "contract": "workshop/cases/002-group-dental-rider-setup/context.md",
+    "evidence": [],
+    "note": "Business outcome requires an operational baseline and post-release observation; not measured by this workshop."
+  },
+  {
+    "id": "002-SC-003",
+    "disposition": "deferred",
+    "contract": "workshop/cases/002-group-dental-rider-setup/context.md",
+    "evidence": [],
+    "note": "Business outcome requires an operational baseline and post-release observation; not measured by this workshop."
+  },
+  {
+    "id": "002-SC-004",
+    "disposition": "deferred",
+    "contract": "workshop/cases/002-group-dental-rider-setup/context.md",
+    "evidence": [],
+    "note": "Business outcome requires an operational baseline and post-release observation; not measured by this workshop."
+  },
+  {
+    "id": "002-SC-005",
+    "disposition": "deferred",
+    "contract": "workshop/cases/002-group-dental-rider-setup/context.md",
+    "evidence": [],
+    "note": "Business outcome requires an operational baseline and post-release observation; not measured by this workshop."
+  },
+  {
+    "id": "002-SC-006",
+    "disposition": "deferred",
+    "contract": "workshop/cases/002-group-dental-rider-setup/context.md",
+    "evidence": [],
+    "note": "Business outcome requires an operational baseline and post-release observation; not measured by this workshop."
+  },
+  {
+    "id": "003-FR-001",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "003-FR-002",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "003-FR-003",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "003-FR-004",
+    "disposition": "automated",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [
+      "src/document-triage.js",
+      "tests/document-triage.test.js"
+    ],
+    "note": "Covered within the declared in-memory teaching boundary."
+  },
+  {
+    "id": "003-FR-005",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [
+      "src/document-triage.js",
+      "tests/document-triage.test.js"
+    ],
+    "note": "Deterministic routing of supplied classification results, exact-match corroboration, privacy holds, pause decisions and receipt clocks. No OCR/model, real attachments, persistent pause store, trained-reviewer authorization, reports or alerts delivery."
+  },
+  {
+    "id": "003-FR-006",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [
+      "src/document-triage.js",
+      "tests/document-triage.test.js"
+    ],
+    "note": "Deterministic routing of supplied classification results, exact-match corroboration, privacy holds, pause decisions and receipt clocks. No OCR/model, real attachments, persistent pause store, trained-reviewer authorization, reports or alerts delivery."
+  },
+  {
+    "id": "003-FR-007",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "003-FR-008",
+    "disposition": "automated",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [
+      "src/document-triage.js",
+      "tests/document-triage.test.js"
+    ],
+    "note": "Covered within the declared in-memory teaching boundary."
+  },
+  {
+    "id": "003-FR-009",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [
+      "src/document-triage.js",
+      "tests/document-triage.test.js"
+    ],
+    "note": "Deterministic routing of supplied classification results, exact-match corroboration, privacy holds, pause decisions and receipt clocks. No OCR/model, real attachments, persistent pause store, trained-reviewer authorization, reports or alerts delivery."
+  },
+  {
+    "id": "003-FR-010",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "003-FR-011",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "003-FR-012",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "003-FR-013",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "003-FR-014",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [
+      "src/document-triage.js",
+      "tests/document-triage.test.js"
+    ],
+    "note": "Deterministic routing of supplied classification results, exact-match corroboration, privacy holds, pause decisions and receipt clocks. No OCR/model, real attachments, persistent pause store, trained-reviewer authorization, reports or alerts delivery."
+  },
+  {
+    "id": "003-FR-015",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [
+      "src/document-triage.js",
+      "tests/document-triage.test.js"
+    ],
+    "note": "Deterministic routing of supplied classification results, exact-match corroboration, privacy holds, pause decisions and receipt clocks. No OCR/model, real attachments, persistent pause store, trained-reviewer authorization, reports or alerts delivery."
+  },
+  {
+    "id": "003-FR-016",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "003-FR-017",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "003-FR-018",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "003-FR-019",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "003-FR-020",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "003-FR-021",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "003-FR-022",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "003-US1-AS1",
+    "disposition": "automated",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [
+      "src/document-triage.js",
+      "tests/document-triage.test.js"
+    ],
+    "note": "Covered within the declared in-memory teaching boundary."
+  },
+  {
+    "id": "003-US1-AS2",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "003-US1-AS3",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "003-US2-AS1",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [
+      "src/document-triage.js",
+      "tests/document-triage.test.js"
+    ],
+    "note": "Deterministic routing of supplied classification results, exact-match corroboration, privacy holds, pause decisions and receipt clocks. No OCR/model, real attachments, persistent pause store, trained-reviewer authorization, reports or alerts delivery."
+  },
+  {
+    "id": "003-US2-AS2",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "003-US2-AS3",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [
+      "src/document-triage.js",
+      "tests/document-triage.test.js"
+    ],
+    "note": "Deterministic routing of supplied classification results, exact-match corroboration, privacy holds, pause decisions and receipt clocks. No OCR/model, real attachments, persistent pause store, trained-reviewer authorization, reports or alerts delivery."
+  },
+  {
+    "id": "003-US2-AS4",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "003-US3-AS1",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "003-US3-AS2",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "003-US4-AS1",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "003-US4-AS2",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "003-US4-AS3",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [
+      "src/document-triage.js",
+      "tests/document-triage.test.js"
+    ],
+    "note": "Deterministic routing of supplied classification results, exact-match corroboration, privacy holds, pause decisions and receipt clocks. No OCR/model, real attachments, persistent pause store, trained-reviewer authorization, reports or alerts delivery."
+  },
+  {
+    "id": "003-US5-AS1",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "003-US5-AS2",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
+    "evidence": [
+      "src/document-triage.js",
+      "tests/document-triage.test.js"
+    ],
+    "note": "Deterministic routing of supplied classification results, exact-match corroboration, privacy holds, pause decisions and receipt clocks. No OCR/model, real attachments, persistent pause store, trained-reviewer authorization, reports or alerts delivery."
+  },
+  {
+    "id": "003-SC-001",
+    "disposition": "deferred",
+    "contract": "workshop/cases/003-inbound-document-triage/context.md",
+    "evidence": [],
+    "note": "Business outcome requires an operational baseline and post-release observation; not measured by this workshop."
+  },
+  {
+    "id": "003-SC-002",
+    "disposition": "deferred",
+    "contract": "workshop/cases/003-inbound-document-triage/context.md",
+    "evidence": [],
+    "note": "Business outcome requires an operational baseline and post-release observation; not measured by this workshop."
+  },
+  {
+    "id": "003-SC-003",
+    "disposition": "deferred",
+    "contract": "workshop/cases/003-inbound-document-triage/context.md",
+    "evidence": [],
+    "note": "Business outcome requires an operational baseline and post-release observation; not measured by this workshop."
+  },
+  {
+    "id": "003-SC-004",
+    "disposition": "deferred",
+    "contract": "workshop/cases/003-inbound-document-triage/context.md",
+    "evidence": [],
+    "note": "Business outcome requires an operational baseline and post-release observation; not measured by this workshop."
+  },
+  {
+    "id": "003-SC-005",
+    "disposition": "deferred",
+    "contract": "workshop/cases/003-inbound-document-triage/context.md",
+    "evidence": [],
+    "note": "Business outcome requires an operational baseline and post-release observation; not measured by this workshop."
+  },
+  {
+    "id": "003-SC-006",
+    "disposition": "deferred",
+    "contract": "workshop/cases/003-inbound-document-triage/context.md",
+    "evidence": [],
+    "note": "Business outcome requires an operational baseline and post-release observation; not measured by this workshop."
+  },
+  {
+    "id": "004-FR-001",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-vision-rider/specs/vision-rider/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "004-FR-002",
+    "disposition": "automated",
+    "contract": "openspec/changes/add-vision-rider/specs/vision-rider/spec.md",
+    "evidence": [
+      "src/vision-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Covered within the declared in-memory teaching boundary."
+  },
+  {
+    "id": "004-FR-003",
+    "disposition": "automated",
+    "contract": "openspec/changes/add-vision-rider/specs/vision-rider/spec.md",
+    "evidence": [
+      "src/vision-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Covered within the declared in-memory teaching boundary."
+  },
+  {
+    "id": "004-FR-004",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-vision-rider/specs/vision-rider/spec.md",
+    "evidence": [
+      "src/vision-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Benefit-grid copying, unprorated allowances, readiness, waiting-period scheduling and cancellation with a notification intent. No vendor messaging, persistent approvals, dependent-age engine, enrollment system or real claims adjudication."
+  },
+  {
+    "id": "004-FR-005",
+    "disposition": "automated",
+    "contract": "openspec/changes/add-vision-rider/specs/vision-rider/spec.md",
+    "evidence": [
+      "src/vision-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Covered within the declared in-memory teaching boundary."
+  },
+  {
+    "id": "004-FR-006",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-vision-rider/specs/vision-rider/spec.md",
+    "evidence": [
+      "src/vision-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Benefit-grid copying, unprorated allowances, readiness, waiting-period scheduling and cancellation with a notification intent. No vendor messaging, persistent approvals, dependent-age engine, enrollment system or real claims adjudication."
+  },
+  {
+    "id": "004-FR-007",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-vision-rider/specs/vision-rider/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "004-FR-008",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-vision-rider/specs/vision-rider/spec.md",
+    "evidence": [
+      "src/vision-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Benefit-grid copying, unprorated allowances, readiness, waiting-period scheduling and cancellation with a notification intent. No vendor messaging, persistent approvals, dependent-age engine, enrollment system or real claims adjudication."
+  },
+  {
+    "id": "004-FR-009",
+    "disposition": "automated",
+    "contract": "openspec/changes/add-vision-rider/specs/vision-rider/spec.md",
+    "evidence": [
+      "src/vision-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Covered within the declared in-memory teaching boundary."
+  },
+  {
+    "id": "004-FR-010",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-vision-rider/specs/vision-rider/spec.md",
+    "evidence": [
+      "src/vision-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Benefit-grid copying, unprorated allowances, readiness, waiting-period scheduling and cancellation with a notification intent. No vendor messaging, persistent approvals, dependent-age engine, enrollment system or real claims adjudication."
+  },
+  {
+    "id": "004-FR-011",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-vision-rider/specs/vision-rider/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "004-US1-AS1",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-vision-rider/specs/vision-rider/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "004-US1-AS2",
+    "disposition": "automated",
+    "contract": "openspec/changes/add-vision-rider/specs/vision-rider/spec.md",
+    "evidence": [
+      "src/vision-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Covered within the declared in-memory teaching boundary."
+  },
+  {
+    "id": "004-US1-AS3",
+    "disposition": "automated",
+    "contract": "openspec/changes/add-vision-rider/specs/vision-rider/spec.md",
+    "evidence": [
+      "src/vision-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Covered within the declared in-memory teaching boundary."
+  },
+  {
+    "id": "004-US2-AS1",
+    "disposition": "automated",
+    "contract": "openspec/changes/add-vision-rider/specs/vision-rider/spec.md",
+    "evidence": [
+      "src/vision-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Covered within the declared in-memory teaching boundary."
+  },
+  {
+    "id": "004-US2-AS2",
+    "disposition": "automated",
+    "contract": "openspec/changes/add-vision-rider/specs/vision-rider/spec.md",
+    "evidence": [
+      "src/vision-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Covered within the declared in-memory teaching boundary."
+  },
+  {
+    "id": "004-US2-AS3",
+    "disposition": "automated",
+    "contract": "openspec/changes/add-vision-rider/specs/vision-rider/spec.md",
+    "evidence": [
+      "src/vision-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Covered within the declared in-memory teaching boundary."
+  },
+  {
+    "id": "004-US3-AS1",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-vision-rider/specs/vision-rider/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "004-US3-AS2",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-vision-rider/specs/vision-rider/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "004-US4-AS1",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-vision-rider/specs/vision-rider/spec.md",
+    "evidence": [
+      "src/vision-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Benefit-grid copying, unprorated allowances, readiness, waiting-period scheduling and cancellation with a notification intent. No vendor messaging, persistent approvals, dependent-age engine, enrollment system or real claims adjudication."
+  },
+  {
+    "id": "004-US4-AS2",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-vision-rider/specs/vision-rider/spec.md",
+    "evidence": [
+      "src/vision-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Benefit-grid copying, unprorated allowances, readiness, waiting-period scheduling and cancellation with a notification intent. No vendor messaging, persistent approvals, dependent-age engine, enrollment system or real claims adjudication."
+  },
+  {
+    "id": "004-US5-AS1",
+    "disposition": "deferred",
+    "contract": "openspec/changes/add-vision-rider/specs/vision-rider/spec.md",
+    "evidence": [],
+    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+  },
+  {
+    "id": "004-US5-AS2",
+    "disposition": "automated",
+    "contract": "openspec/changes/add-vision-rider/specs/vision-rider/spec.md",
+    "evidence": [
+      "src/vision-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Covered within the declared in-memory teaching boundary."
+  },
+  {
+    "id": "004-US5-AS3",
+    "disposition": "partial",
+    "contract": "openspec/changes/add-vision-rider/specs/vision-rider/spec.md",
+    "evidence": [
+      "src/vision-rider.js",
+      "tests/riders.test.js",
+      "src/rider-readiness.js"
+    ],
+    "note": "Benefit-grid copying, unprorated allowances, readiness, waiting-period scheduling and cancellation with a notification intent. No vendor messaging, persistent approvals, dependent-age engine, enrollment system or real claims adjudication."
+  },
+  {
+    "id": "004-SC-001",
+    "disposition": "deferred",
+    "contract": "workshop/cases/004-vision-rider-retro/context.md",
+    "evidence": [],
+    "note": "Business outcome requires an operational baseline and post-release observation; not measured by this workshop."
+  },
+  {
+    "id": "004-SC-002",
+    "disposition": "deferred",
+    "contract": "workshop/cases/004-vision-rider-retro/context.md",
+    "evidence": [],
+    "note": "Business outcome requires an operational baseline and post-release observation; not measured by this workshop."
+  },
+  {
+    "id": "004-SC-003",
+    "disposition": "deferred",
+    "contract": "workshop/cases/004-vision-rider-retro/context.md",
+    "evidence": [],
+    "note": "Business outcome requires an operational baseline and post-release observation; not measured by this workshop."
+  },
+  {
+    "id": "004-SC-004",
+    "disposition": "deferred",
+    "contract": "workshop/cases/004-vision-rider-retro/context.md",
+    "evidence": [],
+    "note": "Business outcome requires an operational baseline and post-release observation; not measured by this workshop."
+  }
+]
