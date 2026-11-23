@@ -20,7 +20,7 @@ export function prepareLab(destination) {
   for (const name of [
     'package.json', 'package-lock.json', '.gitignore', '.github', '.azuredevops', 'pipelines',
     'src', 'tests', 'features', 'openspec', 'scripts', 'workshop', 'docs', 'README.md',
-    'LICENSE', 'THIRD-PARTY-NOTICES.md'
+    'LICENSE'
   ]) cpSync(join(root, name), join(target, name), { recursive: true });
   writeFileSync(join(target, 'src', 'claim-visibility.js'), learnerPolicy, 'utf8');
   writeFileSync(join(target, 'openspec', 'changes', 'implement-dependent-privacy', 'tasks.md'),

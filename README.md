@@ -114,7 +114,3 @@ the hosted-platform and dependency-audit checks still required before delivery.
 Use synthetic examples only. Never put real member data, PHI, secrets or
 customer identifiers in prompts, issues, code, tests, logs or screenshots.
 The workshop is not compliance advice. See [guardrails](docs/guardrails.md).
-
-Upstream attribution and the recorded permission limitation are in
-[THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md). Confirm redistribution terms
-for the unlicensed OpenSpec sample before publication outside authorized use.
