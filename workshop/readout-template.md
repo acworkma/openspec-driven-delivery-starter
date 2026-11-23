@@ -2,20 +2,27 @@
 
 Team and roles: ______
 
-| Evidence | Link/result |
-| --- | --- |
-| Intent issue or Boards item | |
-| OpenSpec change and recorded human decisions | |
-| Selected requirements and Gherkin | |
-| JavaScript policy diff | |
-| Unit tests, Cucumber and OpenSpec validation | |
-| Hosted CI and independent PR review | |
-| Archive/current-contract diff | |
+**Segment 12: 30 minutes across the room.** Share the three outputs from
+[your first spec](first-spec.md). No code or executable tests are required.
 
-- **Earlier discovery:** Which rule or ambiguity did the spec uncover?
-- **Evidence limits:** Which production requirements remain partial/deferred?
-- **Not completed:** Which check, approval or platform step is still blocked?
-- **Next application:** Which of the four cases would your team apply next?
-- **Owner and next action:** Who will resolve the blocker or adopt the practice?
+| First-spec output | Link / notes |
+| --- | --- |
+| Candidate spec outline: intent, scope/non-goals and at least three Given/When/Then scenarios including edge cases | |
+| Completed worksheet section: [Assumptions, dependencies and test data](pair-worksheet.md#assumptions-dependencies-and-test-data), including confirmations, dependency owners/not-ready behavior, data per scenario and Ready to build decision | |
+| 1-2 measures from [measures](../docs/measures.md): definitions, baseline sample/period, collection source, owner and date | |
+
+**Earlier discovery:** Which collision, exception or assumed capability did
+the spec uncover? ______
+
+**Ready to build:** ready / not ready, decided by whom and why? What remains
+unconfirmed, and who will resolve it? ______
+
+**Lab 001 evidence (separate from the candidate):** Link reviewed requirements,
+policy diff, local checks, hosted CI/independent review and archive diff where
+completed. Mark reference-assisted catch-up and incomplete steps explicitly. ______
+
+**What we'll take to Azure Boards / our repo next week:** bounded work item,
+candidate spec/scenario location, existing agent/prompt to use, owner and next
+confirmation or review date. ______
 
 Success is shared understanding and defensible evidence, not lines of AI code.

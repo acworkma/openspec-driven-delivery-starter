@@ -1,5 +1,26 @@
 # Operating model: intent to a maintained contract
 
+## Use the concepts, bring your own tooling
+
+The method is tool-neutral: intent, a spec with Given/When/Then acceptance,
+a plan, tasks, human gates and traceability. OpenSpec is the example engine
+this repo uses. Teams can plug in their own Copilot agents, prompt files or
+templates at each step rather than adopt a new toolkit.
+Work items can live in Azure Boards or GitHub Issues; code can live in
+GitHub or Azure Repos. Both the [Azure DevOps](path-azure-devops.md) and
+[GitHub](path-github.md) paths keep the same responsibilities and gates.
+**AI drafts; humans decide.**
+
+| Method step | Artifact in this repo | Where your own agent/prompt fits |
+| --- | --- | --- |
+| Intent | Case intent brief and issue/Boards item | Product-owner agent clarifies the outcome and non-goals |
+| Spec and acceptance | OpenSpec delta and `features/` scenarios | Drafting/challenge prompts expose missing behavior |
+| Plan and tasks | Change `design.md` and `tasks.md` | Architect/developer agent maps dependencies, scenarios and evidence |
+| Build and evidence | Lab code, unit tests and Cucumber | Implementation agent follows the approved bounded task |
+| Human gates and traceability | Worksheet, PR links and archive diff | Review template assembles evidence; people approve |
+
+## Responsibilities
+
 | Role | Owns | Approves |
 | --- | --- | --- |
 | Product owner | Outcome, business rules, acceptance and scope | Behavior readiness and business acceptance |
@@ -13,6 +34,12 @@
 
 1. **Ready to build:** intent is clear; OpenSpec delta and Gherkin agree;
    material questions are answered by named people; scope is bounded.
+   Complete the [worksheet's assumptions, dependencies and test data section](../workshop/pair-worksheet.md#assumptions-dependencies-and-test-data):
+   capabilities are confirmed with evidence, dependency owners and not-ready
+   behavior are agreed, edge cases are covered, and synthetic data is available
+   or has a confirmed source and owner for each acceptance scenario.
+   Unconfirmed material assumptions block this gate; assign an owner and
+   next action rather than treating an AI answer as confirmation.
 2. **Plan accepted:** design separates business behavior from implementation,
    tasks map to evidence, and simulated/deferred controls are explicit.
 3. **Ready to merge:** applicable automated checks pass, independent reviewers

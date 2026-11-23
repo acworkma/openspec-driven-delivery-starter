@@ -1,156 +1,108 @@
-# Walkthrough: follow one change
+# Walkthrough: case 003, inbound document triage
 
-This is a guided tour of the example, followed by the steps to try the same
-workflow on GitHub. The files in this repository are an illustrative draft:
-they are not evidence that an issue, approval, or pull request already exists.
+Use this **35-minute opening loop demo** in agenda segment 2. Participants read
+and challenge behavior; only the facilitator runs commands. No participant
+coding is required. The supplied artifacts are examples, not evidence that
+business approval or a hosted PR already exists. **AI drafts; humans decide.**
 
-## 1. Start with a problem
+## 1. Intent brief: what result matters? (5 minutes)
 
-A team learns that coverage can be recorded after a service date even though
-it was effective on that date. They want the answer to depend on the date of
-service, not only on whether coverage is active today.
+Open the [case 003 intent brief](../workshop/cases/003-inbound-document-triage/intent-brief.md).
+Contoso wants inbound documents in the right queue quickly, attached only
+when certain, with people handling uncertainty. Read its happy path before
+opening the clarified requirements. A work item can live in Azure Boards or
+GitHub Issues; it explains intent but cannot override an approved contract.
 
-In a GitHub repository, open an issue using **Propose a change**. Describe the
-problem and the desired result. For this synthetic example:
+**Stop and ask:** "The readable fax matched a record. What if its pages are
+blank or unreadable?" Have the room name the observable outcome, the human
+owner and synthetic input that would prove it. The happy path did not specify
+that outcome. Reveal `003-US1-AS2` in the
+[requirement delta](../openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md):
+human review marked "unreadable". This requirement is preserved but not
+implemented in the bounded reference; green tests do not prove OCR behavior.
 
-> When a requested service date falls inside the effective coverage period,
-> return `Active`; otherwise return `Inactive`. Reject unauthenticated requests.
+## 2. OpenSpec proposal: what is proposed, not assumed? (8 minutes)
 
-An issue is the conversation and work item. It does not by itself override an
-approved requirement or security policy.
+Read the [proposal](../openspec/changes/add-inbound-document-triage/proposal.md)
+and requirement delta. Separate the broader business contract from the
+teaching implementation's scope. Current accepted contracts belong under
+`openspec/specs/`; this proposed triage capability belongs under
+`openspec/changes/add-inbound-document-triage/`.
 
-## 2. Compare the current promise with the proposed change
+**Stop and ask:** "We assume member and claim records are searchable. Does
+the field, index, lookup or API actually exist? Who confirmed it, and how?
+What if the upstream lookup or downstream queue is not ready?"
+Record unconfirmed capabilities, dependency owners and not-ready behavior in
+the [worksheet's assumptions, dependencies and test data section](../workshop/pair-worksheet.md#assumptions-dependencies-and-test-data).
+The reference receives synthetic exact-match flags; it does not implement a
+record search. Do not treat those flags or a Copilot answer as confirmation.
 
-Read these files in order:
+Show how your own product-owner agent or prompt could draft the proposal and
+challenge assumptions. OpenSpec is the example engine, not the method itself;
+see [tool-neutral adoption](operating-model.md#use-the-concepts-bring-your-own-tooling).
 
-1. [Current contract](../openspec/specs/member-eligibility/spec.md): what the
-   capability already promises.
-2. [Proposal](../openspec/changes/add-retroactive-coverage/proposal.md): why
-   the change is needed, its scope, and what is out of scope.
-3. [Requirement delta](../openspec/changes/add-retroactive-coverage/specs/member-eligibility/spec.md):
-   the proposed addition, rather than a replacement for the entire contract.
-4. [Design](../openspec/changes/add-retroactive-coverage/design.md) and
-   [tasks](../openspec/changes/add-retroactive-coverage/tasks.md): the intended
-   approach and the work to review and perform.
+## 3. Given/When/Then: what would we observe? (8 minutes)
 
-## 3. Agree on examples
+Open [features/document-triage.feature](../features/document-triage.feature).
+`Given` supplies concrete facts, `When` an action, `Then` an observable result.
+Ask the room to predict the result before revealing each existing example.
 
-Read [the Gherkin scenarios](../features/member-eligibility.feature) with
-product, quality, and engineering representatives:
-
-- A service date inside the coverage period returns `Active`.
-- A service date outside the coverage period returns `Inactive`.
-- An unauthenticated request is rejected.
-
-The words are intended to be understandable without knowing JavaScript.
-`Given` sets up the example, `When` describes what happens, and `Then` states
-the expected result. The start and end dates are inclusive; the unit tests
-cover those boundaries.
-
-People must approve the requirement and examples before implementation. If
-the examples and OpenSpec disagree, resolve the disagreement explicitly.
-Do not silently edit either one to make a test pass.
-
-## 4. Ask Copilot for a plan
-
-With the issue and files available in your Copilot context, start with a
-planning request such as:
-
-```text
-Read the linked issue, current OpenSpec contract, proposed change, design,
-tasks, and related Gherkin scenarios. Do not edit files yet.
-
-Report conflicts or missing decisions. Map each scenario to the implementation
-and automated tests, identify the files you would change, and propose small
-implementation steps. Wait for human review before implementing.
-```
-
-Review the plan with the people responsible for the change. After approval,
-ask Copilot to implement one bounded task at a time without changing the
-approved specs or scenarios. If requirements need to change, treat that as a
-separate reviewed decision.
-
-The sample implementation is already included for inspection; there is no
-claim that Copilot produced it or that a human has approved this draft.
-
-## 5. Connect behavior to code and evidence
-
-This map makes it possible to review the change in either direction: from a
-requirement to evidence, or from a code change back to its reason.
-
-| Example scenario | Requirement | Code and evidence |
+| Existing example | Requirement | Evidence boundary |
 | --- | --- | --- |
-| Retroactive coverage includes the service date | Service-date evaluation | [`getEligibility`](../src/eligibility.js); [Cucumber steps](../features/step-definitions/eligibility.steps.js); inside and endpoint unit tests |
-| Coverage does not include the service date | Service-date evaluation | The same function and steps; before- and after-period unit tests |
-| Unauthenticated request | Authenticated eligibility lookup | The authentication guard and Cucumber rejection step; unit test for a generic error |
+| Confidence 0.96, 0.90 and 0.72 | `003-FR-004`, `003-US1-AS1` | At/above 0.90 routes to claim-form; lower confidence goes to human review |
+| Conflicting identifiers | `003-FR-009`, `003-US2-AS3` | Privacy hold, unattached; a flag does not prove trained-reviewer authorization |
+| Weekly misroutes at 2.4% | `003-FR-006`, `003-US5-AS2` | Returns a pause; does not persist it or deliver an alert |
+| Expedited weekend appeal | `003-FR-014`, `003-US4-AS3` | Retains receipt time; does not deliver an on-call notification |
 
-The current contract also requires protection of sensitive data. This sample
-does not log input records and its rejection error is generic, but it does not
-simulate a complete production logging, identity, or privacy system. Review
-and test those controls separately in a real application.
+Use [coverage](../workshop/coverage.json) to distinguish automated, partial
+and deferred behavior. Map each scenario to a synthetic input and expected
+result. Do not add/change feature files during this demo; record new questions
+for human review if they would change a requirement.
 
-## 6. Run the evidence
+## 4. Design and tasks: what work and evidence are needed? (6 minutes)
 
-From the repository directory:
+Read the [design](../openspec/changes/add-inbound-document-triage/design.md)
+and [tasks](../openspec/changes/add-inbound-document-triage/tasks.md). Map a
+scenario to [the module](../src/document-triage.js) and
+[unit evidence](../tests/document-triage.test.js), without asking the room to
+write JavaScript. An architect/developer agent can propose the task/evidence
+map after humans settle behavior. It cannot confirm dependencies or approve.
 
-```sh
-npm ci
-npm run test:unit
-npm run test:bdd
-npm run validate:spec
-npm audit --audit-level=high
+In the completed reference, the facilitator runs:
+
+```powershell
+npm run test:bdd -- --tags=@003
 ```
 
-The OpenSpec command checks both the current spec and the proposed change.
-The audit checks known dependency advisories; it is not a substitute for
-application security, privacy, or integration testing.
+Ask: "Which missing assumption or production obligation could still stop us?"
+Unchecked approval, participant evidence and archive tasks stay unchecked.
 
-## 7. Open and review a pull request
+## 5. Walk the four human gates (8 minutes)
 
-In a GitHub repository with a change on a branch, open a pull request. Use the
-provided template to link the issue, OpenSpec change, scenarios, code, and
-results. Replace the example with the real issue number, for example
-`Closes #123`. GitHub interprets closing keywords when the pull request targets
-the repository's default branch.
+Open [the operating model](operating-model.md#four-human-gates) and apply each
+gate to the same triage example:
 
-GitHub Actions runs the checks defined in
-[`validate.yml`](../.github/workflows/validate.yml). Set up reviewers and
-required checks using the [governance guide](governance.md); a workflow file
-alone does not protect a branch.
+| Gate | Decision to demonstrate |
+| --- | --- |
+| Ready to build | Do intent and scenarios agree? Are matching/queue capabilities confirmed, material questions answered and synthetic data planned? An unconfirmed lookup blocks this gate. |
+| Plan accepted | Are tasks bounded and mapped to evidence? Are OCR, persistence, authorization and delivery dependencies explicit? |
+| Ready to merge | Do applicable checks pass and did independent humans inspect meaning? Green reference tests are not approval of a participant change. |
+| Contract maintained | After acceptance, inspect the current-spec/archive diff and retain history. Do not archive this unapproved reference proposal. |
 
-Ask reviewers:
+Show the equivalent work-item/PR evidence in either the
+[Azure DevOps path](path-azure-devops.md) or [GitHub path](path-github.md).
+Boards remains a work-tracking option when code is in GitHub as well as Azure
+Repos; link the item, spec, scenario IDs, tasks and evidence.
 
-- Is every requirement and scenario implemented and supported by evidence?
-- Is any behavior or code outside the agreed scope?
-- Did anyone weaken a requirement or scenario to make a check pass?
-- Are security, privacy, and remaining risks addressed appropriately?
+The archive action is performed later only for the approved bounded 001
+learner slice in [segment 10](../workshop/archive-exercise.md). This demo
+explains that gate; it does not claim triage is approved or production-ready.
 
-Copilot can help with that review, but it is not the final approval authority.
+## Continue the day
 
-## 8. Merge and keep the contract current
-
-After the work is finished, the tasks are complete, and the change is
-approved, OpenSpec can apply the delta to the current spec and retain the
-change as history:
-
-```sh
-npx openspec archive add-retroactive-coverage
-npm run validate:spec
-```
-
-Run this on the change branch before its final review, or in a reviewed
-follow-up pull request after merge, according to your team's policy. Inspect
-the updated spec and `openspec/changes/archive/` in the diff. If archiving
-changes the PR after review, obtain any renewed approvals your rules require.
-Do not use `--yes` to bypass incomplete tasks or human review.
-
-An issue linked with a closing keyword closes automatically when the linked
-pull request is merged into the default branch. The current spec then describes
-the accepted behavior, while the archived change preserves the history.
-
-## Continue into the workshop
-
-This inherited eligibility sample is a warm-up. Continue with the
-[four-case catalog](../workshop/cases/README.md) and
-[001 learner lab](../workshop/lab-001.md). The original workflow illustration
-is retained as a static asset with attribution; no Python generator is needed.
+Use the [004 retro drill](../workshop/retro-spec-drill.md), then
+[lab 001](../workshop/lab-001.md): 55 minutes intent, 45 design/examples/tasks,
+60 implementation and a combined 35-minute CI/review/archive block.
+Protect the 70-minute [first-spec exercise](../workshop/first-spec.md) and
+30-minute [readouts](../workshop/readout-template.md). The
+[agenda](../workshop/agenda.md) totals 480 minutes; case 002 is optional self-study.
