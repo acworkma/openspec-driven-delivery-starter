@@ -76,7 +76,9 @@
     "evidence": [
       "src/claim-status.js",
       "tests/claim-status.test.js",
-      "src/claim-visibility.js"
+      "src/claim-visibility.js",
+      "workshop/lab-001.md",
+      "workshop/pair-worksheet.md"
     ],
     "note": "Dependent visibility, list projection and direct lookup parity. No portal, EOB service, audit store, freshness integration, accessibility or translation implementation."
   },
@@ -325,8 +327,8 @@
     "id": "002-FR-001",
     "disposition": "deferred",
     "contract": "openspec/changes/add-group-dental-rider-setup/specs/group-dental-rider-setup/spec.md",
-    "evidence": [],
-    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+    "evidence": ["workshop/cases/README.md"],
+    "note": "Case 002 is optional self-study, not a timed agenda segment. This requirement remains preserved for specification/review; no additional production behavior is implemented."
   },
   {
     "id": "002-FR-002",
@@ -821,7 +823,9 @@
     "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
     "evidence": [
       "src/document-triage.js",
-      "tests/document-triage.test.js"
+      "tests/document-triage.test.js",
+      "features/document-triage.feature",
+      "docs/walkthrough.md"
     ],
     "note": "Covered within the declared in-memory teaching boundary."
   },
@@ -829,15 +833,20 @@
     "id": "003-US1-AS2",
     "disposition": "deferred",
     "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
-    "evidence": [],
-    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+    "evidence": [
+      "docs/walkthrough.md",
+      "workshop/facilitator-guide.md",
+      "workshop/first-spec.md",
+      "workshop/pair-worksheet.md"
+    ],
+    "note": "Segment 2 stop-and-ask edge case and segment 11 option B drafting input. These documents guide specification and synthetic test-data planning only; unreadable-page/OCR behavior remains unimplemented."
   },
   {
     "id": "003-US1-AS3",
     "disposition": "deferred",
     "contract": "openspec/changes/add-inbound-document-triage/specs/inbound-document-triage/spec.md",
-    "evidence": [],
-    "note": "Preserved for specification/review exercises; production behavior is outside the bounded teaching implementation."
+    "evidence": ["workshop/first-spec.md"],
+    "note": "Segment 11 option B challenges page accountability and uncertain document handoffs. This is specification practice only; splitting and confirmation remain outside the bounded teaching implementation."
   },
   {
     "id": "003-US2-AS1",

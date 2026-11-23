@@ -2,14 +2,16 @@
 
 Every case retains its source business intent and has a JavaScript reference,
 node:test evidence and executable Cucumber.js examples. Only 001 is the main
-hands-on build. Begin 004 with the original epic, not its answer.
+hands-on build. Open with the 003 loop demo, then begin 004 with the original
+epic, not its answer. Finish with [your first spec](../first-spec.md); no coding
+is required outside lab 001. Case 002 is optional self-study, not a timed segment.
 
 | Case | Input | OpenSpec change | Executable examples |
 | --- | --- | --- | --- |
+| 003: opening demo | [Triage brief](003-inbound-document-triage/intent-brief.md) | [Proposal](../../openspec/changes/add-inbound-document-triage/proposal.md) | [Gherkin](../../features/document-triage.feature) |
+| 004: retro drill | [Original vision epic](004-vision-rider-retro/original-epic.md) | [Proposal / answer](../../openspec/changes/add-vision-rider/proposal.md) | [Gherkin / answer](../../features/vision-retro.feature) |
 | 001 | [Claim-status brief](001-member-claim-status/intent-brief.md) | [Proposal](../../openspec/changes/add-member-claim-status/proposal.md) | [Gherkin](../../features/claim-status.feature) |
-| 002 | [Dental-rider brief](002-group-dental-rider-setup/intent-brief.md) | [Proposal](../../openspec/changes/add-group-dental-rider-setup/proposal.md) | [Gherkin](../../features/dental-rider.feature) |
-| 003 | [Triage brief](003-inbound-document-triage/intent-brief.md) | [Proposal](../../openspec/changes/add-inbound-document-triage/proposal.md) | [Gherkin](../../features/document-triage.feature) |
-| 004 | [Original vision epic](004-vision-rider-retro/original-epic.md) | [Proposal / answer](../../openspec/changes/add-vision-rider/proposal.md) | [Gherkin / answer](../../features/vision-retro.feature) |
+| 002: optional self-study | [Dental-rider brief](002-group-dental-rider-setup/intent-brief.md) | [Proposal](../../openspec/changes/add-group-dental-rider-setup/proposal.md) | [Gherkin](../../features/dental-rider.feature) |
 
 Each directory's `context.md` preserves clarifications, source scenarios,
 outcomes, entities and edge cases for review. It is background, not a second
@@ -18,7 +20,7 @@ authority that overrides OpenSpec.
 Run the references with `npx cucumber-js --tags @001` (or `@002`, `@003`,
 `@004`). `npm test` includes all four plus the inherited eligibility warm-up.
 
-## Follow-on exercise: 002 dental
+## Optional self-study: 002 dental
 
 Read the brief before the answer. Identify which approvals and evidence must
 block go-live, then propose examples for missing/duplicate test results and a
@@ -26,13 +28,14 @@ changed catalog. Run the existing reference, inspect `src/dental-rider.js`
 and `src/rider-readiness.js`, and distinguish a simulated acceptance flag from
 an actual administrator response.
 
-## Follow-on exercise: 003 triage
+## Opening loop demo: 003 triage
 
-Predict routing at confidence 0.899 and 0.90, and pause behavior at misroute
-rates 0.02 and 0.024. Add a reviewed example for a conflicting identifier.
-Run the reference and explain why it receives a classification result rather
-than calling a model. A returned alert or attachment intent is not delivered
-to a real queue or record system.
+Follow the [walkthrough](../../docs/walkthrough.md): intent brief, OpenSpec
+proposal, Given/When/Then scenarios, tasks and the four human gates. Stop to
+ask about unreadable pages and whether the matching lookup/index really exists.
+Compare proposed behavior with what the executable reference actually proves.
+A returned alert or attachment intent is not delivered to a real queue or
+record system. Reuse this discovery approach in first-spec option B.
 
 ## Coverage is explicit
 

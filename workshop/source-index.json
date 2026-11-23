@@ -1,6 +1,20 @@
 {
   "repository": "acworkma/spec-driven-delivery-starter",
   "revision": "5de8ace89bbb7e938200664d6cd93541cd9c4612",
+  "workshop": {
+    "agenda": "workshop/agenda.md",
+    "caseOrder": ["003", "004", "001"],
+    "optionalSelfStudy": ["002"],
+    "firstSpec": {
+      "segment": 11,
+      "artifact": "workshop/first-spec.md",
+      "worksheet": "workshop/pair-worksheet.md"
+    },
+    "readout": {
+      "segment": 12,
+      "artifact": "workshop/readout-template.md"
+    }
+  },
   "items": [
     {
       "id": "001-FR-001",
