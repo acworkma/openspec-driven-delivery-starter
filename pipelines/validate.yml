@@ -1,0 +1,24 @@
+# Azure Repos PR validation must be configured as a required branch policy.
+trigger:
+  branches:
+    include:
+      - main
+pr: none
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  OPENSPEC_TELEMETRY: '0'
+
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '22.x'
+    displayName: Use Node.js 22
+  - script: npm ci
+    displayName: Install locked dependencies
+  - script: npm run check
+    displayName: Validate OpenSpec, traceability, unit tests and Gherkin
+  - script: npm audit --audit-level=high
+    displayName: Audit dependencies

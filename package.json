@@ -1,0 +1,24 @@
+{
+  "name": "openspec-gherkin-sdd-sample",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^22.12.0 || ^24.0.0 || >=26.0.0"
+  },
+  "scripts": {
+    "validate:spec": "openspec validate --all --strict --no-interactive",
+    "test": "npm run test:unit && npm run test:bdd",
+    "test:unit": "node --test \"tests/*.test.js\"",
+    "test:bdd": "cucumber-js",
+    "check:traceability": "node scripts/check-traceability.js",
+    "check": "npm run validate:spec && npm run check:traceability && npm test",
+    "lab:prepare": "node scripts/prepare-lab.js",
+    "lab:test": "node --test tests/claim-status.test.js",
+    "lab:bdd": "cucumber-js --tags @001"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "13.3.0",
+    "@fission-ai/openspec": "2.0.0"
+  }
+}
